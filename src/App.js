@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Helmet } from "react-helmet";
 import UserInfo from "./data/UserInfo";
 import Main from "./Main";
@@ -9,6 +10,7 @@ function App() {
         <title>{UserInfo.name && UserInfo.name} - Portfolio</title>
       </Helmet>
       <Main />
+      <Analytics />
     </div>
   );
 }
