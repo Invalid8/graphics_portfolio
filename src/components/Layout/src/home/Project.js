@@ -52,14 +52,14 @@ const Pass = ({ project, setPicData }) => {
   return (
     <div className="curtain jc-c ai-c em-2 p-4">
       <div className="header ta-c">
-        <h2 className="fw-7">My Designs</h2>
+        <h1 className="fw-7 text-xl-center">My Designs</h1>
         <div className="body jc-c gallary w-100 p-4">
           {project.images.map((image) => {
             return (
               <div
-                className="imgBox proof animated zoomIn"
+                className="imgBox proof animated fadeIn"
                 key={image.id}
-                onDoubleClick={() => {
+                onClick={() => {
                   setPicData(image);
                 }}
               >
@@ -163,7 +163,7 @@ const Project = ({ intro, projects }) => {
                     >
                       <Container
                         fluid="md"
-                        className="pic-frame bg-special-0 p-4 t-0 x10-gap custom-scroll-bar"
+                        className="pic-frame bg-special-0 p-4 t-0 x10-gap custom-scroll-bar animated zoomIn"
                       >
                         <div className="controls">
                           <button
@@ -222,7 +222,9 @@ const Project = ({ intro, projects }) => {
                           </div>
                         </ModalHeader>
                         <ModalBody className="d-flex flex-column x10-gap">
-                          <div className={`imgBox animated ${AnimateMethod}`}>
+                          <div
+                            className={`imgBox animated AnimateMethod fadeIn`}
+                          >
                             <img src={picData.img.big} alt="..." />
                           </div>
                           <div className="info">

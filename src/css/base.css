@@ -12,8 +12,7 @@
 @font-face {
   font-family: "Karla";
   src: url("../fonts/karla/Karla-Regular.eot");
-  src: url("../fonts/karla/Karla-Regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/karla/Karla-Regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/karla/Karla-Regular.woff2") format("woff2"),
     url("../fonts/karla/Karla-Regular.woff") format("woff"),
     url("../fonts/karla/Karla-Regular.ttf") format("truetype");
@@ -22,14 +21,23 @@
 }
 
 @font-face {
-	font-family: "Samurai";
-	src: url("../fonts/samurai-blast-font/misc/SamuraiBlast.woff");
-	src: url("../fonts/samurai-blast-font/SamuraiBlast-8MnyD.otf") format("otf"),
-		url("../fonts/samurai-blast-font/SamuraiBlast-YznGj.ttf") format("ttf"),
-		url("../fonts/samurai-blast-font/misc/SamuraiBlast.woff") format("woff"),
-		url("../fonts/samurai-blast-font/SamuraiBlast-YznGj.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Samurai";
+  src: url("../fonts/samurai-blast-font/misc/SamuraiBlast.woff");
+  src: url("../fonts/samurai-blast-font/SamuraiBlast-8MnyD.otf") format("otf"),
+    url("../fonts/samurai-blast-font/SamuraiBlast-YznGj.ttf") format("ttf"),
+    url("../fonts/samurai-blast-font/misc/SamuraiBlast.woff") format("woff"),
+    url("../fonts/samurai-blast-font/SamuraiBlast-YznGj.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixel";
+  src: url("../fonts/pixel-gaming-font/PixelGamingRegular-d9w0g.ttf");
+  src:
+    url("../fonts/pixel-gaming-font/PixelGamingRegular-d9w0g.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
