@@ -71,7 +71,6 @@ body {
 }
 
 .text-special-0-i {
-  font-family: "Samurai", var(--font-5);
   color: var(--color1-0-i) !important;
 }
 
@@ -153,7 +152,8 @@ body {
 }
 
 .special-txt-2 {
-  font-family: var(--font-2);
+  /* font-family: var(--font-2); */
+  font-family: "Samurai", var(--font-5) !important;
 }
 
 .s-btn-1,
@@ -402,6 +402,7 @@ a.mod:hover {
   height: 80px;
   min-height: 80px;
   top: 0;
+  z-index: 3000;
 }
 
 .paint {
@@ -506,7 +507,7 @@ a.mod:hover {
     right: 0;
     bottom: 0;
     height: 100vh;
-    z-index: 1000 !important;
+    z-index: 2800 !important;
   }
 
   .nav-l-c {
