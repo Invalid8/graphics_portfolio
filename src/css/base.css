@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/karla/Karla-Bold.eot");
+  src: url("../fonts/karla/Karla-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/karla/Karla-Bold.woff2") format("woff2"),
+    url("../fonts/karla/Karla-Bold.woff") format("woff"),
+    url("../fonts/karla/Karla-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/karla/Karla-Regular.eot");
+  src: url("../fonts/karla/Karla-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karla/Karla-Regular.woff2") format("woff2"),
+    url("../fonts/karla/Karla-Regular.woff") format("woff"),
+    url("../fonts/karla/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Samurai";
+	src: url("../fonts/samurai-blast-font/misc/SamuraiBlast.woff");
+	src: url("../fonts/samurai-blast-font/SamuraiBlast-8MnyD.otf") format("otf"),
+		url("../fonts/samurai-blast-font/SamuraiBlast-YznGj.ttf") format("ttf"),
+		url("../fonts/samurai-blast-font/misc/SamuraiBlast.woff") format("woff"),
+		url("../fonts/samurai-blast-font/SamuraiBlast-YznGj.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  border: none;
+
+  scroll-behavior: smooth;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  z-index: 100;
+}
+
+:root {
+  --main-color: #040029;
+  --sub-color: #0d6efd;
+
+  --m-white: #fefefec9;
+  --m-black: #070707;
+
+  --black: #020202;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* transition: 0.3s ease-in; */
+
+  width: 100% !important;
+  visibility: visible !important;
+
+  min-width: 100%;
+  max-width: 100%;
+
+  /* background-color: var(--m-black); */
+  /* color: var(--m-white); */
+
+  max-height: 100vh;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+a:hover,
+button:hover {
+  opacity: 70%;
+}
+
+.centerize {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.imgBox {
+  overflow: hidden;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.flex {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.j-sp {
+  justify-content: space-between;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 900;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 900;
+}
+
+.relative {
+  position: relative;
+}
+
+.blue {
+  background-color: #194fc2;
+}
+
+.black {
+  background-color: #000;
+}
+
+.darkblue {
+  background-color: #040029;
+}
+
+.navyblue {
+  background-color: navy;
+}
+
+.orange {
+  background-color: #ff8800;
+}
+
+.red {
+  background-color: #fd0000;
+}
+
+.green {
+  background-color: #0a750a;
+}
+
+.yellow {
+  background-color: #f0cd09;
+}
+
+.blue-c {
+  color: #194fc2;
+}
+
+.black-c {
+  color: #000;
+}
+
+.darkblue-c {
+  color: #040029;
+}
+
+.navyblue-c {
+  color: navy;
+}
+
+.orange-c {
+  color: #ff8800;
+}
+
+.red-c {
+  color: #fd0000;
+}
+
+.green-c {
+  color: #0a750a;
+}
+
+.grey-c {
+  color: #686666;
+}
+
+.yellow-c {
+  color: #f0cd09;
+}
+
+.chap {
+  width: auto;
+  color: #fff;
+  margin-top: 5px;
+  padding: 3px 9px;
+  border-radius: 4px;
+
+  text-transform: capitalize;
+
+  font-size: 90% !important;
+}
+
+.chap.better {
+  padding: 5px 10px;
+  padding-top: 6px;
+}
+
+.x0-gap-row {
+  row-gap: 0;
+}
+
+.x0-gap-col {
+  column-gap: 0;
+}
+
+.x2-gap {
+  gap: 2px;
+}
+
+.x5-gap {
+  gap: 5px;
+}
+
+.x10-gap {
+  gap: 10px;
+}
+
+.x20-gap {
+  gap: 20px;
+}
+
+.x30-gap {
+  gap: 30px;
+}
+
+.x40-gap {
+  gap: 30px;
+}
+
+.cap-txt {
+  text-transform: capitalize;
+}
+
+.upp-txt {
+  text-transform: uppercase;
+}
+
+.s_height {
+  height: calc(100vh - 80px);
+}
+
+.s_height_o {
+  height: 100vh;
+}
+
+.s_width {
+  width: 100vw;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.relative-p {
+  position: relative !important;
+}
+
+.absolute-p {
+  position: absolute !important;
+}
+
+.fixed-p {
+  position: fixed;
+}
+
+.op-1 {
+  opacity: 1;
+}
+
+.op-05 {
+  opacity: 0.5;
+}
+
+.op-06 {
+  opacity: 0.6;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
+a.mod {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ta-c {
+  text-align: center !important;
+}
+
+.ta-j {
+  text-align: justify !important;
+}
