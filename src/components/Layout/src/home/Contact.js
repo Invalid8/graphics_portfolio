@@ -11,7 +11,7 @@ const Contact = () => {
         className="sec s2 w-100 h-100 d-flex flex-column jc-c"
         style={{ flexBasis: "80%" }}
       >
-        <div className="contain d-flex flex-column x5-gap jc-c ai-c p-4">
+        <div className="contained d-flex flex-column x5-gap jc-c ai-c p-4">
           <h1 className="d-flex flex-wrap x5-gap upp-txt">
             <span className="special-txt-2">thank you for</span>
             <span className="special-txt-1">your attention</span>
@@ -19,8 +19,8 @@ const Contact = () => {
           <SmNavs />
         </div>
       </div>
-      <div className="sec s1 relative-p h-100 w-100 o-hidden d-flex flex-column jc-c h-grid m-full paint">
-        <div className="contain d-flex flex-column flex-wrap custom-scroll-bar p-4">
+      <div className="sec s1 relative-p h-100 w-100 o-hidden d-flex flex-column jc-c h-grid paint">
+        <div className="contained d-flex flex-column flex-wrap custom-scroll-bar p-4">
           <h1 className="special-txt-2">Contact Me</h1>
           <div className="info">
             <p>For futher information, please contact me via:</p>

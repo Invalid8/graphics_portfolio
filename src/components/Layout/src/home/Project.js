@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, ModalBody, ModalHeader } from "react-bootstrap";
 import { SmNavs } from "../../../Designs";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Prove = ({ project, index }) => {
   return (
@@ -63,7 +65,7 @@ const Pass = ({ project, setPicData }) => {
                   setPicData(image);
                 }}
               >
-                <img src={image.img.small} alt="..." />
+                <LazyLoadImage src={image.img.small} effect="blur" alt="..." />
               </div>
             );
           })}
